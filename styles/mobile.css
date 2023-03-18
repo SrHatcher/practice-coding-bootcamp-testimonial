@@ -36,6 +36,64 @@ html{
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-size: 3.2rem;
     font-family: var(--font);
 }
+
+main{
+
+    max-width: 32.7rem;
+    width: 85%;
+
+    overflow: hidden;
+    background-color: red;
+}
+.sr-only{
+    position: absolute;
+    top: auto;
+    left: -1000rem;
+
+    font-weight: 700;
+
+    width: 0.1rem;
+    height: 0.1rem;
+
+    overflow: hidden;
+
+}
+.carrousel_container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    width: 200%;
+    height: 100%;
+
+    background-color: green;
+}
+.main__testimonial{
+    width: calc(100% / 2 - 2rem);
+
+    
+}
+.testimonial__image{}
+.testimonial__switch_container{}
+.testimonial__left_button{}
+.testimonial__right_button{}
+.testimonial__testimonial_container{}
+.testimonial__text{}
+.testimonial__name{}
+.testimonial__degree{}
+.main__testimonial{}
+.testimonial__image{}
+.testimonial__switch_container{}
+.testimonial__left_button{}
+.testimonial__right_button{}
+.testimonial__testimonial_container{}
+.testimonial__text{}
+.testimonial__name{}
+.testimonial__degree{}
