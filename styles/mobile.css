@@ -203,3 +203,22 @@ main{
 
     color: var(--grayish-blue);
 }
+
+/*
+    I learned the code below from jwalczak94 on frontend mentor, this adds a fading animation.
+    it's necessary to uncomment some code in the index.js file
+*/
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
