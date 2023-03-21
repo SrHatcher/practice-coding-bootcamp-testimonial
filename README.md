@@ -11,3 +11,4 @@ Thanks for checking out this front-end coding challenge.
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
 ## The challenge
+https://srhatcher.github.io/practice-coding-bootcamp-testimonial/
