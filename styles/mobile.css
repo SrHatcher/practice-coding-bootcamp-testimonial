@@ -40,15 +40,18 @@ body{
     justify-content: center;
     align-items: center;
 
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-family: var(--font);
+
+    background-image: url('../images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
 }
 
 main{
-
-    max-width: 32.7rem;
-    width: 85%;
-    height: 56.5rem;
+    width: 32.7rem;
+    height: auto;
 
     overflow: hidden;
 }
@@ -72,6 +75,9 @@ main{
 
     width: 200%;
     height: 100%;
+
+    transition: all .5s ease;
+    transform: translateX(0%);
 }
 .main__testimonial{
     display: flex;
@@ -165,17 +171,35 @@ main{
     border-bottom-right-radius: 2rem;
     cursor: pointer;
 }
-.testimonial__testimonial_container{}
-.testimonial__text{}
-.testimonial__info_container{}
-.testimonial__name{}
-.testimonial__degree{}
-.main__testimonial{}
-.testimonial__image{}
-.testimonial__switch_container{}
-.testimonial__left_button{}
-.testimonial__right_button{}
-.testimonial__testimonial_container{}
-.testimonial__text{}
-.testimonial__name{}
-.testimonial__degree{}
+.testimonial__testimonial_container{
+    padding-block-start: 3rem;
+
+    background-image: url('../images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 6.5rem;
+}
+.testimonial__text{
+    text-align: center;
+
+    color: var(--dark-blue);
+}
+.testimonial__info_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin-block-start: 2rem;
+}
+.testimonial__name{
+    font-weight: 700;
+
+    color: var(--dark-blue);
+}
+.testimonial__degree{
+    font-weight: 500;
+    line-height: 1.7rem;
+
+    color: var(--grayish-blue);
+}
