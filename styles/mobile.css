@@ -40,7 +40,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    font-size: 3.2rem;
+    font-size: 1.6rem;
     font-family: var(--font);
 }
 
@@ -48,9 +48,9 @@ main{
 
     max-width: 32.7rem;
     width: 85%;
+    height: 56.5rem;
 
     overflow: hidden;
-    background-color: red;
 }
 .sr-only{
     position: absolute;
@@ -72,20 +72,102 @@ main{
 
     width: 200%;
     height: 100%;
-
-    background-color: green;
 }
 .main__testimonial{
-    width: calc(100% / 2 - 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
 
-    
+    padding-block-start: 4rem;
+
+    width: calc(100% / 2 - 1rem);   
 }
-.testimonial__image{}
-.testimonial__switch_container{}
-.testimonial__left_button{}
-.testimonial__right_button{}
+.testimonial__image{
+    position: relative;
+
+    width: 25.2rem;
+    height: 25.2rem;
+
+    border-radius: 1.5rem;
+}
+.testimonial__image img{
+    border-radius: 1rem;
+}
+.testimonial__image::after{
+    content: '';
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+    display: inline-block;
+
+    width: 32rem;
+    height: 32rem;
+
+    background-image: url('../images/pattern-bg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+.testimonial__switch_container{
+    position: absolute;
+    bottom: -1.4rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8rem;
+    height: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+.testimonial__switch_container::after{
+    content: '';
+    position: absolute;
+    bottom: 1.5rem;
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+    box-shadow: 0 0 4rem 0.5rem rgb(50, 0, 97);
+}
+.testimonial__left_button{
+    width: 50%;
+    height: 100%;
+
+    background-image: url('../images/icon-prev.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-color: white;
+    border: none;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    cursor: pointer;
+}
+.testimonial__right_button{
+    width: 50%;
+    height: 100%;
+
+    background-image: url('../images/icon-next.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-color: white;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    cursor: pointer;
+}
 .testimonial__testimonial_container{}
 .testimonial__text{}
+.testimonial__info_container{}
 .testimonial__name{}
 .testimonial__degree{}
 .main__testimonial{}
